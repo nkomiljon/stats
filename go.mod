@@ -1,4 +1,4 @@
-module github.com/najibulloShapoatov/stats
+module github.com/najibulloShapoatov/stats/v2
 
 go 1.15
 
