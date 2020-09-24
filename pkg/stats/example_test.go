@@ -2,7 +2,7 @@ package stats
 
 import (
 	"fmt"
-	"github.com/najibulloShapoatov/bank/pkg/types"
+	"github.com/najibulloShapoatov/bank/v2/pkg/types"
 )
 
 
