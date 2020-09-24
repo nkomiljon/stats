@@ -7,20 +7,22 @@ import (
 //Avg func return average amount from slice Payment
 func Avg(payments []types.Payment) types.Money {
 	var sum types.Money
+	i := 0
 	for _, v := range payments {
-		if v.Status == types.StatusFail{
+		if v.Status == types.StatusFail {
 			continue
 		}
 		sum += v.Amount
+		i++
 	}
-	return sum / types.Money(len(payments))
+	return sum / types.Money(i)
 }
 
 //TotalInCategory  returned total sum in one category
 func TotalInCategory(payments []types.Payment, category types.Category) (total types.Money) {
 
 	for _, v := range payments {
-		if v.Status == types.StatusFail{
+		if v.Status == types.StatusFail {
 			continue
 		}
 		if category == v.Category {
